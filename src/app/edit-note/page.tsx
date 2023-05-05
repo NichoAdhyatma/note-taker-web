@@ -16,7 +16,7 @@ export default function About() {
           Kembali
         </Link>
         <Link href="https://openinapp.co/p1ocf" target="blank">
-          <Button type="primary">Download dan Simpan Note mu</Button>
+          <Button type="primary">Download Aplikasi</Button>
         </Link>
       </div>
       <div className="p-4">
