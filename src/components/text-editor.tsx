@@ -11,7 +11,6 @@ const ReactQuill = dynamic(
 
 const QuillEditor: FC = (): ReactElement => {
   const [value, setValue] = useState("");
-  const [loading, isLoading] = useState(true);
 
   return (
     <ReactQuill
