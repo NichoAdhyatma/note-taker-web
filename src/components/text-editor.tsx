@@ -1,10 +1,15 @@
-"use client";
-
-import React, { useState } from "react";
-import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
+import { FC, ReactElement, useState } from "react";
 import "react-quill/dist/quill.snow.css";
 
-export default function TextEditor() {
+const ReactQuill = dynamic(
+  () => {
+    return import("react-quill");
+  },
+  { ssr: false }
+);
+
+const QuillEditor: FC = (): ReactElement => {
   const [value, setValue] = useState("");
 
   return (
@@ -15,4 +20,6 @@ export default function TextEditor() {
       placeholder="Tulis Note mu disini"
     />
   );
-}
+};
+
+export default QuillEditor;
