@@ -15,7 +15,7 @@ export default function MainLayout({
       <Navbar />
       <div
         className={
-          "p-4 flex flex-col gap-4 overflow-y-scroll max-h-screen text-center mt-4"
+          "p-4 flex flex-col gap-4 overflow-y-scroll max-h-[85vh] text-center mt-4"
         }
       >
         {children}
