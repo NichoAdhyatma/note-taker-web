@@ -5,7 +5,7 @@ import Button from "../../components/button";
 import Link from "next/link";
 import QuillEditor from "@/components/text-editor";
 
-export default function About() {
+export default function EditNote() {
   return (
     <MainLayout>
       <div className="flex items-center gap-4 justify-between p-4">
